@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../awg_sv_project/awg_sv_project/rtl/awg_core.sv" \
+"../../../../../../awg_sv_project/awg_sv_project/rtl/dds_addr.sv" \
+"../../../../../../awg_sv_project/awg_sv_project/rtl/scaler.sv" \
+"../../../../../../awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv" \
+"../../../../../../awg_sv_project/awg_sv_project/rtl/wave_rom.sv" \
+"../../../../../../awg_sv_project/awg_sv_project/tb/tb_awg_core.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

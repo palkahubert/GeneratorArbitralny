@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  1 23:26:31 2026
+# Process ID: 17504
+# Current directory: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25768 C:\Users\kluck\Downloads\sdup_projekt\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Log file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado.log
+# Journal file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+open_project C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/edit_awg_axi_v1_0.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+current_project GeneratorArbitralny
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+current_project edit_awg_axi_v1_0
+add_files -norecurse -scan_for_includes {C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv}
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {C:\Users\kluck\Downloads\sdup_projekt\GeneratorArbitralny\ip_repo\awg_axi_1.0\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv'.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+[Mon Jun  1 23:37:18 2026] Launched synth_1...
+Run output will be captured here: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/edit_awg_axi_v1_0.runs/synth_1/runme.log
+current_project GeneratorArbitralny
+current_project edit_awg_axi_v1_0
+current_project GeneratorArbitralny
+current_project edit_awg_axi_v1_0
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+[Mon Jun  1 23:38:58 2026] Launched synth_1...
+Run output will be captured here: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/edit_awg_axi_v1_0.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.695 ; gain = 431.125
+add_files -norecurse -scan_for_includes C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim/waveform.mem
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+[Mon Jun  1 23:41:32 2026] Launched synth_1...
+Run output will be captured here: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/edit_awg_axi_v1_0.runs/synth_1/runme.log
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0'
+refresh_design
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property core_revision 3 [ipx::current_core]
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado_pid17504.debug)
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+set_property core_revision 4 [ipx::current_core]
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado_pid17504.debug)
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+create_project gen_arb_z_ip C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+set_property  ip_repo_paths  C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo'.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/hdl/awg_axi_v1_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo'.
+ERROR: [Common 17-180] Spawn failed: No error
+create_bd_design "design_awg"
+Wrote  : <C:\Users\kluck\Downloads\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.srcs\sources_1\bd\design_awg\design_awg.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {1 246 -50} [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:awg_axi:1.0 awg_axi_0
+endgroup
+set_property location {0.5 -260 -155} [get_bd_cells clk_wiz_0]
+set_property location {2.5 681 -159} [get_bd_cells proc_sys_reset_0]
+set_property location {3.5 1083 -188} [get_bd_cells awg_axi_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [Boardtcl 53-1] No current board_part set.
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /proc_sys_reset_0/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /proc_sys_reset_0/ext_reset_in'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins proc_sys_reset_0/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0_0 /proc_sys_reset_0/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/awg_axi_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins awg_axi_0/S00_AXI]
+</awg_axi_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+endgroup
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins awg_axi_0/s00_axi_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ps7_0_axi_periph/ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ps7_0_axi_periph/S00_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ps7_0_axi_periph/M00_ACLK]
+delete_bd_objs [get_bd_nets Net]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/aux_reset_in]
+current_project edit_awg_axi_v1_0
+set_property core_revision 5 [ipx::current_core]
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado_pid17504.debug)
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+close_project
+current_project GeneratorArbitralny
+close_project
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells awg_axi_0]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo'.
+report_ip_status -name ip_status
+save_bd_design
+Wrote  : <C:\Users\kluck\Downloads\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.srcs\sources_1\bd\design_awg\design_awg.bd> 
+Wrote  : <C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ui/bd_45c1fdb0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:awg_axi:1.0 awg_axi_0
+endgroup
+set_property location {4 1121 -181} [get_bd_cells awg_axi_0]
+delete_bd_objs [get_bd_cells awg_axi_0]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo'.
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:awg_axi:1.0 awg_axi_0
+endgroup
+set_property location {4 1085 -172} [get_bd_cells awg_axi_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_out1 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/awg_axi_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins awg_axi_0/S00_AXI]
+</awg_axi_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+startgroup
+make_bd_pins_external  [get_bd_pins awg_axi_0/sd_out]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\kluck\Downloads\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.srcs\sources_1\bd\design_awg\design_awg.bd> 
+Wrote  : <C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ui/bd_45c1fdb0.ui> 
+validate_bd_design
+make_wrapper -files [get_files C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd] -top
+INFO: [BD 41-1662] The design 'design_awg.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\kluck\Downloads\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.srcs\sources_1\bd\design_awg\design_awg.bd> 
+VHDL Output written to : C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v
+VHDL Output written to : C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/sim/design_awg.v
+VHDL Output written to : C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v
+add_files -norecurse C:/Users/kluck/Downloads/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  2 00:10:58 2026...

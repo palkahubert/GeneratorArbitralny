@@ -1,0 +1,71 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include <stdint.h>
+
+#define AWG_BASEADDR XPAR_AWG_AXI_0_S00_AXI_BASEADDR
+
+#define REG_CONTROL     0x00
+#define REG_PHASE_STEP  0x04
+#define REG_AMP_OFFSET  0x08
+#define REG_WAVE_WRITE  0x0C
+
+#define CTRL_ENABLE     0x00000001
+#define CTRL_RESET      0x00000002
+
+static void awg_write_sample(uint16_t addr, int16_t sample)
+{
+    uint32_t word;
+    word = ((uint32_t)(addr & 0x0FFF) << 16) | ((uint16_t)sample);
+    Xil_Out32(AWG_BASEADDR + REG_WAVE_WRITE, word);
+}
+
+int main()
+{
+    uint16_t i;
+
+    /*
+     * Reset rdzenia AWG.
+     */
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_RESET);
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, 0x00000000);
+
+    /*
+     * Do symulacji nie ladujemy calej tablicy 4096 probek,
+     * bo MicroBlaze symuluje sie wolno.
+     * Ladujemy pierwsze 256 probek rampy/trojkata.
+     */
+    for (i = 0; i < 256; i++)
+    {
+        int16_t sample;
+        sample = (int16_t)(-20000 + ((int32_t)i * 40000) / 255);
+        awg_write_sample(i, sample);
+    }
+
+    /*
+     * f_clk AWG = 100 MHz.
+     * phase_step = f_out * 2^32 / f_clk.
+     * Dla 1 kHz: okolo 0x0000A7C5.
+     */
+    Xil_Out32(AWG_BASEADDR + REG_PHASE_STEP, 0x0000A7C5);
+
+    /*
+     * amplitude = 0x6000 ~= 0.75, offset = 0.
+     * Rejestr: [31:16] offset, [15:0] amplitude.
+     */
+    Xil_Out32(AWG_BASEADDR + REG_AMP_OFFSET, 0x00006000);
+
+    /*
+     * Start generatora.
+     */
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_ENABLE);
+
+    while (1)
+    {
+        /*
+         * Generator dziala sprzetowo.
+         * MicroBlaze juz nic nie musi robic.
+         */
+    }
+
+    return 0;
+}

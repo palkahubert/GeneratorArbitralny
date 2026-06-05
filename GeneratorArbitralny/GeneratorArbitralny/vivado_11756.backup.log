@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 26 15:19:58 2026
+# Process ID: 11756
+# Current directory: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8572 C:\Users\kluck\Downloads\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Log file: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/vivado.log
+# Journal file: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.xpr
+IINFO: [Project 1-313] Project file moved from 'C:/Users/palka/Documents/SDUP/GeneratorArbitralny' since last save.CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/dds_addr.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/rtl/dds_addr.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/scaler.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/rtl/scaler.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/wave_rom.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/rtl/wave_rom.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/awg_core.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/rtl/awg_core.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/waveform.mem', nor could it be found using path 'C:/Users/palka/Downloads/awg_sv_project/awg_sv_project/tb/waveform.mem'.
+SScanning sources...Finished scanning sources
+IINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_awg_core' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim/waveform.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim/waveform.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_awg_core_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/awg_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module awg_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/dds_addr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_addr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/scaler.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_delta_1st
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/wave_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wave_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_awg_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 11b9a8bfe62f453ebd0f1852b060eba8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_awg_core_behav xil_defaultlib.tb_awg_core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dds_addr
+Compiling module xil_defaultlib.wave_rom_default
+Compiling module xil_defaultlib.scaler
+Compiling module xil_defaultlib.sigma_delta_1st
+Compiling module xil_defaultlib.awg_core
+Compiling module xil_defaultlib.tb_awg_core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_awg_core_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_awg_core_behav -key {Behavioral:sim_1:Functional:tb_awg_core} -tclbatch {tb_awg_core.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_awg_core.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_awg_core_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 900.062 ; gain = 40.098
+run all
+Koniec symulacji. Wyniki zapisane w awg_output.csv
+$finish called at time : 8009500 ns : File "C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv" Line 88
+run all
+run: Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 902.055 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 902.055 ; gain = 0.000

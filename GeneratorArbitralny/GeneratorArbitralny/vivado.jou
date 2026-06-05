@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  2 12:40:59 2026
+# Process ID: 9688
+# Current directory: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11920 C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Log file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado.log
+# Journal file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.xpr
+update_compile_order -fileset sources_1

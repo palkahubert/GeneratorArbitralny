@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.sim/sim_1/behav/xsim/glbl.v,1779801587,verilog,,,,glbl,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/awg_core.sv,1779803921,systemVerilog,,C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/dds_addr.sv,,awg_core,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/dds_addr.sv,1779803921,systemVerilog,,C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/scaler.sv,,dds_addr,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/scaler.sv,1779803921,systemVerilog,,C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv,,scaler,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/sigma_delta_1st.sv,1779803921,systemVerilog,,C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/wave_rom.sv,,sigma_delta_1st,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/rtl/wave_rom.sv,1779803921,systemVerilog,,C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv,,wave_rom,,,,,,,,
+C:/Users/kluck/Downloads/awg_sv_project/awg_sv_project/tb/tb_awg_core.sv,1779803921,systemVerilog,,,,tb_awg_core,,,,,,,,

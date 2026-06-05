@@ -1,0 +1,22 @@
+verilog xil_defaultlib --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/85a3" --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ec67/hdl" \
+"../../../bd/design_awg/ip/design_awg_lmb_bram_2/sim/design_awg_lmb_bram_2.v" \
+"../../../bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_clk_wiz.v" \
+"../../../bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.v" \
+"../../../bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v" \
+
+sv xil_defaultlib --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/85a3" --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ec67/hdl" \
+"../../../bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv" \
+"../../../bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv" \
+"../../../bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv" \
+"../../../bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv" \
+"../../../bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv" \
+
+verilog xil_defaultlib --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/85a3" --include "../../../../gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ec67/hdl" \
+"../../../bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0.v" \
+"../../../bd/design_awg/ip/design_awg_awg_axi_0_0/sim/design_awg_awg_axi_0_0.v" \
+"../../../bd/design_awg/ip/design_awg_xbar_1/sim/design_awg_xbar_1.v" \
+"../../../bd/design_awg/sim/design_awg.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

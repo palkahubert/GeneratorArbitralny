@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  2 16:48:39 2026
+# Process ID: 8048
+# Current directory: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23336 C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.xpr
+# Log file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/vivado.log
+# Journal file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type functional
+source design_awg_wrapper.tcl
+restart
+run 50 ms
+run 1 s
+close_sim
+launch_simulation -mode post-implementation -type timing
+launch_sdk -workspace C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf
+add_files -fileset sim_1 -norecurse C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+set_property SCOPED_TO_REF design_awg [get_files -all -of_objects [get_fileset sim_1] {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf}]
+set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sim_1] {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf}]
+file mkdir C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sim_1/new/tb_design_awg.sv w ]
+add_files -fileset sim_1 C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sim_1/new/tb_design_awg.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_design_awg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_design_awg.tcl
+run 1 s
+run 1 s
+run 5 ms
+run 5 ms
+close_sim
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+restart
+run 5 ms
+run 5 ms
+close_sim
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+add_files -norecurse C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+set_property used_in_simulation 0 [get_files C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf]
+set_property SCOPED_TO_REF design_awg [get_files -all -of_objects [get_fileset sources_1] {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf}]
+set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sources_1] {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf}]
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+reset_simulation sim_1
+launch_simulation -mode behavioral
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+reset_simulation sim_1
+launch_simulation -mode behavioral
+source tb_design_awg.tcl
+close_sim
+set elf_file "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf"
+add_files -norecurse $elf_file
+set_property used_in_simulation true [get_files $elf_file]
+set_property used_in_implementation true [get_files $elf_file]
+reset_simulation sim_1
+launch_simulation -mode behavioral
+source tb_design_awg.tcl
+run 5 ms
+open_bd_design {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd}
+close_bd_design [get_bd_designs design_awg]
+close_sim
+open_bd_design {C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd}
+launch_simulation
+source tb_design_awg.tcl
+run 5 ms
+close_sim
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

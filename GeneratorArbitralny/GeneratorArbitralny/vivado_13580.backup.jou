@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  1 23:03:52 2026
+# Process ID: 13580
+# Current directory: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26320 C:\Users\kluck\Downloads\sdup_projekt\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Log file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado.log
+# Journal file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.xpr
+update_compile_order -fileset sources_1
+set_property part xc7z010clg400-1 [current_project]
+file mkdir C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new
+close [ open C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv w ]
+add_files C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/kluck/Downloads/sdup_projekt/awg_sv_project/awg_sv_project/rtl/wave_rom.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/kluck/Downloads/sdup_projekt/awg_sv_project/awg_sv_project/rtl/wave_rom.sv
+create_peripheral xilinx.com user awg_axi 1.0 -dir C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:awg_axi:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:awg_axi:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:awg_axi:1.0]
+set_property  ip_repo_paths  C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/../ip_repo/awg_axi_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_awg_axi_v1_0 -directory C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/../ip_repo c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project GeneratorArbitralny
+current_project edit_awg_axi_v1_0
+close_project

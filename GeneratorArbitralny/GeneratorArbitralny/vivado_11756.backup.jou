@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 26 15:19:58 2026
+# Process ID: 11756
+# Current directory: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8572 C:\Users\kluck\Downloads\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Log file: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/vivado.log
+# Journal file: C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kluck/Downloads/GeneratorArbitralny/GeneratorArbitralny/GeneratorArbitralny.xpr
+uupdate_compile_order -fileset sources_1
+update_compile_order -fileset sim_1update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_awg_core.tcl
+run all
+run all
+run all

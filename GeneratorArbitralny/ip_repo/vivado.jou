@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  2 00:00:52 2026
+# Process ID: 4592
+# Current directory: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4296 C:\Users\kluck\Downloads\sdup_projekt\GeneratorArbitralny\ip_repo\edit_awg_axi_v1_0.xpr
+# Log file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/vivado.log
+# Journal file: C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/edit_awg_axi_v1_0.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0/component.xml
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/kluck/Downloads/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0

@@ -1,0 +1,79 @@
+# Vivado / Xilinx generated files
+
+.Xil/
+*.jou
+*.log
+*.str
+*.zip
+*.backup.*
+*.bak
+*.orig
+
+# Vivado generated project directories
+
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.gen/
+*.ip_user_files/
+
+# Vivado generated reports/checkpoints/bitstreams
+
+*.rpt
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.mmi
+*.mcs
+*.prm
+*.pb
+*.wdb
+*.vcd
+*.saif
+
+# XSim / simulation output
+
+xsim.dir/
+*.wdb
+*.vcd
+*.log
+*.jou
+webtalk*.jou
+webtalk*.log
+
+# SDK / Vitis generated build output
+
+*.sdk/.metadata/
+*.sdk/**/Debug/
+*.sdk/**/Release/
+*.sdk/**/DebugConfig/
+*.sdk/**/ReleaseConfig/
+*.sdk/**/bsp/
+*.sdk/**/hw/
+*.elf
+*.o
+*.a
+*.map
+*.lst
+
+# Eclipse/SDK local settings
+
+.project
+.cproject
+.settings/
+.metadata/
+
+# OS/editor junk
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+
+*.tmp
+*.temp
+~$*
