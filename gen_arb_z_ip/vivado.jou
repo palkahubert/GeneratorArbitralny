@@ -2,31 +2,19 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Jun  5 11:27:26 2026
-# Process ID: 2092
-# Current directory: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1316 C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.xpr
-# Log file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/vivado.log
-# Journal file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip\vivado.jou
+# Start of session at: Mon Jun  8 15:07:55 2026
+# Process ID: 2416
+# Current directory: C:/repos/GeneratorArbitralny/gen_arb_z_ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16000 C:\repos\GeneratorArbitralny\gen_arb_z_ip\gen_arb_z_ip.xpr
+# Log file: C:/repos/GeneratorArbitralny/gen_arb_z_ip/vivado.log
+# Journal file: C:/repos/GeneratorArbitralny/gen_arb_z_ip\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.xpr
+open_project C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.xpr
 update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-launch_sdk -workspace C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf
+open_bd_design {C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd}
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
+launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-launch_simulation
-source tb_design_awg.tcl
-run 5 ms
-close_sim
-update_ip_catalog -rebuild -scan_changes
-report_ip_status -name ip_status
-launch_sdk -workspace C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf
-launch_simulation
-source tb_design_awg.tcl
-run 5 ms
-close_sim
+open_run impl_1
+launch_sdk -workspace C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk -hwspec C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf

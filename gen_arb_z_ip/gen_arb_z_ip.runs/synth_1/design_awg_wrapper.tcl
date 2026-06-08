@@ -23,43 +23,43 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.cache/wt [current_project]
-set_property parent.project_path C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.xpr [current_project]
+set_property webtalk.parent_dir C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.cache/wt [current_project]
+set_property parent.project_path C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/ip_repo [current_project]
+set_property ip_repo_paths c:/repos/GeneratorArbitralny/GeneratorArbitralny/ip_repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.cache/ip [current_project]
+set_property ip_output_repo c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
-set_property SCOPED_TO_REF design_awg [get_files -all C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf]
-set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf]
-read_verilog -library xil_defaultlib C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v
-add_files C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/design_awg_dlmb_bram_if_cntlr_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/design_awg_ilmb_bram_if_cntlr_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/design_awg_lmb_bram_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/design_awg_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg_ooc.xdc]
+add_files C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+set_property SCOPED_TO_REF design_awg [get_files -all C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf]
+set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf]
+read_verilog -library xil_defaultlib C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v
+add_files C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg.bd
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/design_awg_dlmb_bram_if_cntlr_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/design_awg_ilmb_bram_if_cntlr_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/design_awg_lmb_bram_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/design_awg_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/design_awg_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -69,8 +69,8 @@ set_property used_in_implementation false [get_files -all C:/Users/palka/Documen
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc
-set_property used_in_implementation false [get_files C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
+read_xdc C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc
+set_property used_in_implementation false [get_files C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

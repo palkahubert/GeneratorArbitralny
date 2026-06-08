@@ -1,6 +1,6 @@
-11:48:01 **** Incremental Build of configuration Debug for project awg_sim ****
+16:09:19 **** Incremental Build of configuration Debug for project awg_sim ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:48:02 Build Finished (took 169ms)
+16:09:19 Build Finished (took 91ms)
 

@@ -246,6 +246,9 @@ proc create_root_design { parentCell } {
    CONFIG.FREQ_HZ {125000000} \
  ] $clk_125MHz
   set reset_rtl_0 [ create_bd_port -dir I -type rst reset_rtl_0 ]
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] $reset_rtl_0
   set reset_rtl_0_0 [ create_bd_port -dir I -type rst reset_rtl_0_0 ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \

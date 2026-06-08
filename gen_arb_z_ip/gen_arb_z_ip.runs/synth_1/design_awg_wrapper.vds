@@ -2,72 +2,70 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Jun  5 11:35:43 2026
-# Process ID: 19584
-# Current directory: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1
+# Start of session at: Mon Jun  8 16:04:58 2026
+# Process ID: 14032
+# Current directory: C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1
 # Command line: vivado.exe -log design_awg_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_awg_wrapper.tcl
-# Log file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/design_awg_wrapper.vds
-# Journal file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1\vivado.jou
+# Log file: C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/design_awg_wrapper.vds
+# Journal file: C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_awg_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/repos/GeneratorArbitralny/GeneratorArbitralny/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.cache/ip 
 Command: synth_design -top design_awg_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6208 
+INFO: Helper process launched with PID 7856 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 426.629 ; gain = 108.176
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 497.297 ; gain = 107.223
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_awg_wrapper' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_awg' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_awg_awg_axi_0_0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_awg_axi_0_0/synth/design_awg_awg_axi_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'awg_axi_v1_0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_wrapper' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_awg' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_awg_axi_0_0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_awg_axi_0_0/synth/design_awg_awg_axi_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'awg_axi_v1_0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'awg_axi_v1_0_S00_AXI' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'awg_axi_v1_0_S00_AXI' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:233]
-INFO: [Synth 8-226] default block is never used [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:374]
-INFO: [Synth 8-6157] synthesizing module 'awg_core' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:2]
+INFO: [Synth 8-226] default block is never used [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:233]
+INFO: [Synth 8-226] default block is never used [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:374]
+INFO: [Synth 8-6157] synthesizing module 'awg_core' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:2]
 	Parameter PHASE_BITS bound to: 32 - type: integer 
 	Parameter ADDR_BITS bound to: 12 - type: integer 
 	Parameter SAMPLE_BITS bound to: 16 - type: integer 
 	Parameter INIT_FILE bound to: waveform.mem - type: string 
-INFO: [Synth 8-6157] synthesizing module 'dds_addr' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'dds_addr' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv:2]
 	Parameter PHASE_BITS bound to: 32 - type: integer 
 	Parameter ADDR_BITS bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dds_addr' (1#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'wave_bram' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'dds_addr' (1#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/dds_addr.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'wave_bram' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:3]
 	Parameter ADDR_BITS bound to: 12 - type: integer 
 	Parameter SAMPLE_BITS bound to: 16 - type: integer 
 	Parameter INIT_FILE bound to: waveform.mem - type: string 
 	Parameter DEPTH bound to: 4096 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:21]
-INFO: [Synth 8-3876] $readmem data file 'waveform.mem' is read successfully [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'wave_bram' (2#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'scaler' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv:7]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:21]
+INFO: [Synth 8-3876] $readmem data file 'waveform.mem' is read successfully [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'wave_bram' (2#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/new/wave_bram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'scaler' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv:7]
 	Parameter SAMPLE_BITS bound to: 16 - type: integer 
 	Parameter MAX_SAMPLE bound to: 17'sb00111111111111111 
 	Parameter MIN_SAMPLE bound to: 17'sb11000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'scaler' (3#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'sigma_delta_1st' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'scaler' (3#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/scaler.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'sigma_delta_1st' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv:2]
 	Parameter SAMPLE_BITS bound to: 16 - type: integer 
 	Parameter ACC_BITS bound to: 20 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sigma_delta_1st' (4#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv:2]
-INFO: [Synth 8-6155] done synthesizing module 'awg_core' (5#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:2]
-INFO: [Synth 8-6155] done synthesizing module 'awg_axi_v1_0_S00_AXI' (6#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'awg_axi_v1_0' (7#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_awg_axi_0_0' (8#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_awg_axi_0_0/synth/design_awg_awg_axi_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'design_awg_axi_uartlite_0_0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:86]
+INFO: [Synth 8-6155] done synthesizing module 'sigma_delta_1st' (4#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/sigma_delta_1st.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'awg_core' (5#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/GeneratorArbitralny/GeneratorArbitralny.srcs/sources_1/imports/rtl/awg_core.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'awg_axi_v1_0_S00_AXI' (6#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'awg_axi_v1_0' (7#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/54d1/hdl/awg_axi_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_awg_axi_0_0' (8#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_awg_axi_0_0/synth/design_awg_awg_axi_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_awg_axi_uartlite_0_0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:86]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -76,8 +74,8 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_axi_uartlite_0_0' [c:/Users/
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2128' bound to instance 'U0' of component 'axi_uartlite' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2128' bound to instance 'U0' of component 'axi_uartlite' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -86,22 +84,22 @@ INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Users/palka/Documents
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_BAUDRATE bound to: 9600 - type: integer 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
 	Parameter C_RATIO bound to: 651 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'baudrate' (9#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
-INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (9#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -109,46 +107,46 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/palka/Documents/SDU
 	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (10#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (10#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 	Parameter C_SIZE bound to: 5 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (11#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (11#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (12#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (13#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (14#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (15#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
-INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (12#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (13#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (14#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (15#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (16#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
-INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (17#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (16#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (17#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111 
@@ -157,7 +155,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/palka/Document
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer 
@@ -166,47 +164,47 @@ INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/palka/Docum
 	Parameter C_USE_WSTRB bound to: 0 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 	Parameter C_BUS_AWIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b00 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (18#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (18#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b01 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (18#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (18#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b10 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (18#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (18#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b11 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (18#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (19#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
-WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (20#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (21#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (22#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_axi_uartlite_0_0' (23#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:86]
-WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_awg_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:152]
-INFO: [Synth 8-6157] synthesizing module 'design_awg_clk_wiz_1_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.v:70]
-INFO: [Synth 8-6157] synthesizing module 'design_awg_clk_wiz_1_1_clk_wiz' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (18#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (19#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (20#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (21#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (22#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_axi_uartlite_0_0' (23#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/synth/design_awg_axi_uartlite_0_0.vhd:86]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_awg_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:152]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_clk_wiz_1_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_clk_wiz_1_1_clk_wiz' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -266,9 +264,9 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2018.3/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_clk_wiz_1_1_clk_wiz' (27#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_clk_wiz_1_1' (28#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.v:70]
-INFO: [Synth 8-638] synthesizing module 'design_awg_mdm_1_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_clk_wiz_1_1_clk_wiz' (27#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_clk_wiz_1_1' (28#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_awg_mdm_1_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -300,8 +298,8 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_mdm_1_2' [c:/Users/palka/Doc
 	Parameter C_DATA_SIZE bound to: 32 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'MDM' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:12316' bound to instance 'U0' of component 'MDM' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:1653]
-INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:13969]
+INFO: [Synth 8-3491] module 'MDM' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:12316' bound to instance 'U0' of component 'MDM' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:1653]
+INFO: [Synth 8-638] synthesizing module 'MDM' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:13969]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -333,25 +331,25 @@ INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/palka/Documents/SDUP/sdu
 	Parameter C_DATA_SIZE bound to: 32 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15475]
+INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15475]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:253' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15542]
-INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:253' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15542]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:277]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:287]
-INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (29#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:287]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (29#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:277]
 	Parameter C_TARGET bound to: 1'b0 
-INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:315' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15764]
-INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:315' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15764]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:328]
 	Parameter C_TARGET bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:338]
-INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (30#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:338]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (30#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:328]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -381,8 +379,8 @@ INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (30#1) [c:/Users/palka/Do
 	Parameter C_TRACE_ID bound to: 110 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'MDM_Core' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:5478' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15844]
-INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:6715]
+INFO: [Synth 8-3491] module 'MDM_Core' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:5478' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:15844]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:6715]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -429,8 +427,8 @@ INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/Users/palka/Documents/SDU
 	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
 	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_EN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:2847' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:10066]
-INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3119]
+INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:2847' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:10066]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3119]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
 	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
@@ -450,85 +448,85 @@ INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/Users/palka/Documents
 	Parameter C_EN_WIDTH bound to: 1 - type: integer 
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:614' bound to instance 'FDC_I' of component 'MB_FDC_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3475]
-INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:614' bound to instance 'FDC_I' of component 'MB_FDC_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3475]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:630]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:651]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (31#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:651]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (31#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:630]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:673' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3485]
-INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:673' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3485]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:690]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:713]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (32#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:713]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (32#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:690]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0000000101100111 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3674]
-INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3674]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0000000101100111 
 	Parameter INIT bound to: 16'b0000000101100111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E' (33#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E' (33#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100001010000111 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3691]
-INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3691]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100001010000111 
 	Parameter INIT bound to: 16'b0100001010000111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized0' (33#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized0' (33#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100010001000011 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3760]
-INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3760]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100010001000011 
 	Parameter INIT bound to: 16'b0100010001000011 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized1' (33#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized1' (33#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0101100001001101 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3777]
-INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:736' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3777]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
 	Parameter C_TARGET bound to: 1'b0 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0101100001001101 
 	Parameter INIT bound to: 16'b0101100001001101 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized2' (33#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3936]
-WARNING: [Synth 8-6014] Unused sequential element set_Ext_BRK_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3864]
-INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (34#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3119]
-INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (35#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:6715]
-INFO: [Synth 8-256] done synthesizing module 'MDM' (36#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:13969]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_mdm_1_2' (37#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'design_awg_microblaze_0_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:116]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:763]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_15_MB_SRL16E__parameterized2' (33#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3936]
+WARNING: [Synth 8-6014] Unused sequential element set_Ext_BRK_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3864]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (34#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:3119]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (35#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:6715]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (36#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/41ef/hdl/mdm_v3_2_vh_rfs.vhd:13969]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_mdm_1_2' (37#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/synth/design_awg_mdm_1_2.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'design_awg_microblaze_0_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:116]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 100000000 - type: integer 
 	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
@@ -694,18 +692,18 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_microblaze_0_1' [c:/Users/pa
 	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd:162656' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:807]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_microblaze_0_1' (89#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:116]
-WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_awg_microblaze_0_1' requires 52 connections, but only 51 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:192]
-INFO: [Synth 8-6157] synthesizing module 'design_awg_microblaze_0_axi_periph_1' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:341]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_16NUK9Q' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:807]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_16NUK9Q' (90#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:807]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1Y3LLCO' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:953]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1Y3LLCO' (91#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:953]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1XSFUFZ' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1319]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1XSFUFZ' (92#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1319]
-INFO: [Synth 8-6157] synthesizing module 'design_awg_xbar_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/synth/design_awg_xbar_1.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd:162656' bound to instance 'U0' of component 'MicroBlaze' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:807]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_microblaze_0_1' (89#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/synth/design_awg_microblaze_0_1.vhd:116]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_awg_microblaze_0_1' requires 52 connections, but only 51 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:192]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_microblaze_0_axi_periph_1' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:341]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_16NUK9Q' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:807]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_16NUK9Q' (90#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:807]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1Y3LLCO' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1Y3LLCO' (91#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:953]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1XSFUFZ' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1319]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1XSFUFZ' (92#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1319]
+INFO: [Synth 8-6157] synthesizing module 'design_awg_xbar_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/synth/design_awg_xbar_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -754,7 +752,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -807,7 +805,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -821,27 +819,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:
 	Parameter C_TARGET_QUAL bound to: 3'b011 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (93#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (94#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (93#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (94#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000000110000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (94#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (95#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (94#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (95#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -856,8 +854,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' (96#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' (96#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -865,54 +863,54 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' (97#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' (97#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter' (98#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter' (98#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' (98#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' (98#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (99#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (99#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (99#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (99#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (99#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (99#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (100#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (100#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (100#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' (101#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (102#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_xbar_1' (103#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/synth/design_awg_xbar_1.v:59]
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'design_awg_xbar_1' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:768]
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'design_awg_xbar_1' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:772]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_microblaze_0_axi_periph_1' (104#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:341]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1BQBW9G' [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1085]
-INFO: [Synth 8-638] synthesizing module 'design_awg_dlmb_bram_if_cntlr_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:84]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (100#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' (101#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (102#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_xbar_1' (103#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_xbar_1/synth/design_awg_xbar_1.v:57]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'design_awg_xbar_1' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:768]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'design_awg_xbar_1' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:772]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_microblaze_0_axi_periph_1' (104#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:341]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1BQBW9G' [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1085]
+INFO: [Synth 8-638] synthesizing module 'design_awg_dlmb_bram_if_cntlr_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -936,8 +934,8 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_dlmb_bram_if_cntlr_2' [c:/Us
 	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:225]
-INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -973,8 +971,8 @@ INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/palka/Docu
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ECC bound to: 0 - type: integer 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
-INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
 	Parameter C_TARGET bound to: 3 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
@@ -988,34 +986,34 @@ INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/palka/Documents/SDUP
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
-INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
-INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (105#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (106#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (107#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_dlmb_bram_if_cntlr_2' (108#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'design_awg_dlmb_v10_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (105#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (106#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (107#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_dlmb_bram_if_cntlr_2' (108#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_bram_if_cntlr_2/synth/design_awg_dlmb_bram_if_cntlr_2.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_awg_dlmb_v10_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:164]
-INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4094' bound to instance 'POR_FF_I' of component 'FDS' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:169]
+INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4094' bound to instance 'POR_FF_I' of component 'FDS' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:169]
 INFO: [Synth 8-6157] synthesizing module 'FDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4094]
 	Parameter INIT bound to: 1'b1 
 INFO: [Synth 8-6155] done synthesizing module 'FDS' (109#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4094]
-INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (110#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_dlmb_v10_2' (111#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:89]
-WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_awg_dlmb_v10_2' requires 25 connections, but only 24 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1231]
-INFO: [Synth 8-638] synthesizing module 'design_awg_ilmb_bram_if_cntlr_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (110#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_dlmb_v10_2' (111#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/synth/design_awg_dlmb_v10_2.vhd:89]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_awg_dlmb_v10_2' requires 25 connections, but only 24 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1231]
+INFO: [Synth 8-638] synthesizing module 'design_awg_ilmb_bram_if_cntlr_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -1039,8 +1037,8 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_ilmb_bram_if_cntlr_2' [c:/Us
 	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:225]
-INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -1076,8 +1074,8 @@ INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [c:/
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ECC bound to: 0 - type: integer 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
-INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
 	Parameter C_TARGET bound to: 3 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -1091,24 +1089,24 @@ INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/Users/palk
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
-INFO: [Synth 8-638] synthesizing module 'pselect_mask__parameterized1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask__parameterized1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (111#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (111#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (111#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_ilmb_bram_if_cntlr_2' (112#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'design_awg_ilmb_v10_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (111#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (111#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (111#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_ilmb_bram_if_cntlr_2' (112#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_bram_if_cntlr_2/synth/design_awg_ilmb_bram_if_cntlr_2.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_awg_ilmb_v10_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:164]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_ilmb_v10_2' (113#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:89]
-WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_awg_ilmb_v10_2' requires 25 connections, but only 24 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1277]
-INFO: [Synth 8-638] synthesizing module 'design_awg_lmb_bram_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:80]
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_ilmb_v10_2' (113#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/synth/design_awg_ilmb_v10_2.vhd:89]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_awg_ilmb_v10_2' requires 25 connections, but only 24 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1277]
+INFO: [Synth 8-638] synthesizing module 'design_awg_lmb_bram_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:80]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -1184,26 +1182,26 @@ INFO: [Synth 8-638] synthesizing module 'design_awg_lmb_bram_2' [c:/Users/palka/
 	Parameter C_COUNT_36K_BRAM bound to: 16 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/37c2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:255]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_lmb_bram_2' (124#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:80]
-WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_awg_lmb_bram_2' requires 16 connections, but only 14 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1302]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1BQBW9G' (125#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1085]
-INFO: [Synth 8-638] synthesizing module 'design_awg_rst_clk_wiz_1_100M_1' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:74]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/37c2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_lmb_bram_2' (124#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_lmb_bram_2/synth/design_awg_lmb_bram_2.vhd:80]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_awg_lmb_bram_2' requires 16 connections, but only 14 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1302]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1BQBW9G' (125#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:1085]
+INFO: [Synth 8-638] synthesizing module 'design_awg_rst_clk_wiz_1_100M_1' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
 	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
 	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
@@ -1213,37 +1211,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/palka/Documen
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51683' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51683' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51683]
 	Parameter INIT bound to: 16'b0000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (126#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51683]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -1251,29 +1249,29 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/pal
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (126#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (127#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (126#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (127#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (128#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (129#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (130#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_awg_rst_clk_wiz_1_100M_1' (131#1) [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:74]
-WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_awg_rst_clk_wiz_1_100M_1' requires 10 connections, but only 8 given [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:330]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg' (132#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_awg_wrapper' (133#1) [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (128#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (129#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (130#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_awg_rst_clk_wiz_1_100M_1' (131#1) [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/synth/design_awg_rst_clk_wiz_1_100M_1.vhd:74]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_awg_rst_clk_wiz_1_100M_1' requires 10 connections, but only 8 given [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:330]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg' (132#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/synth/design_awg.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_awg_wrapper' (133#1) [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/hdl/design_awg_wrapper.v:12]
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_aclk
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_resetn
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[1]
@@ -1376,7 +1374,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[11]
 WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[10]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 868.016 ; gain = 549.562
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 933.383 ; gain = 543.309
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1389,10 +1387,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 868.016 ; gain = 549.562
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 933.383 ; gain = 543.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 868.016 ; gain = 549.562
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 933.383 ; gain = 543.309
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 651 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1401,47 +1399,47 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc] for cell 'design_awg_i/microblaze_0/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc] for cell 'design_awg_i/microblaze_0/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc] for cell 'design_awg_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc] for cell 'design_awg_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_microblaze_0_1/design_awg_microblaze_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_awg_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/dlmb_v10/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/dlmb_v10/U0'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/ilmb_v10/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/ilmb_v10/U0'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc] for cell 'design_awg_i/mdm_1/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc] for cell 'design_awg_i/mdm_1/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_dlmb_v10_2/design_awg_dlmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_ilmb_v10_2/design_awg_ilmb_v10_2.xdc] for cell 'design_awg_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc] for cell 'design_awg_i/mdm_1/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc] for cell 'design_awg_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_awg_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc] for cell 'design_awg_i/clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_awg_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1_board.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_rst_clk_wiz_1_100M_1/design_awg_rst_clk_wiz_1_100M_1.xdc] for cell 'design_awg_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0_board.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_axi_uartlite_0_0/design_awg_axi_uartlite_0_0.xdc] for cell 'design_awg_i/axi_uartlite_0/U0'
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 959.188 ; gain = 0.000
-Parsing XDC File [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk_125MHz' already exists, overwriting the previous clock with the same name. [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc:19]
-Finished Parsing XDC File [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1032.332 ; gain = 0.000
+Parsing XDC File [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_125MHz' already exists, overwriting the previous clock with the same name. [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc:19]
+Finished Parsing XDC File [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_awg_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
+Parsing XDC File [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_awg_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_awg_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 963.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1037.457 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 963.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1037.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 432 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instances
@@ -1455,28 +1453,28 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
   SRL16 => SRL16E: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 963.965 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 963.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1037.488 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1037.488 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 49).
-Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_local_memory/dlmb_v10/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 56).
-Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_local_memory/ilmb_v10/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 61).
-Applied set_property DONT_TOUCH = true for design_awg_i/mdm_1/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 72).
-Applied set_property DONT_TOUCH = true for design_awg_i/clk_wiz_1/inst. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 77).
-Applied set_property DONT_TOUCH = true for design_awg_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 85).
-Applied set_property DONT_TOUCH = true for design_awg_i/axi_uartlite_0/U0. (constraint file  C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 95).
+Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 49).
+Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_local_memory/dlmb_v10/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 56).
+Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_local_memory/ilmb_v10/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 61).
+Applied set_property DONT_TOUCH = true for design_awg_i/mdm_1/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 72).
+Applied set_property DONT_TOUCH = true for design_awg_i/clk_wiz_1/inst. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 77).
+Applied set_property DONT_TOUCH = true for design_awg_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 85).
+Applied set_property DONT_TOUCH = true for design_awg_i/axi_uartlite_0/U0. (constraint file  C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/dont_touch.xdc, line 95).
 Applied set_property DONT_TOUCH = true for design_awg_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
@@ -1492,7 +1490,7 @@ Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_axi_periph/
 Applied set_property DONT_TOUCH = true for design_awg_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_awg_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "EN_16x_Baud" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
@@ -1530,7 +1528,7 @@ INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "which_pc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "dbg_hit" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -1540,7 +1538,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1551,7 +1549,7 @@ INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/U
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2193,7 +2191,7 @@ INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "Instr_Insert_Reg_En" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Status_Reg_En" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:642]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:642]
 INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM inst/awg_axi_v1_0_S00_AXI_inst/u_awg_core/u_wave_bram/mem_reg to conserve power
 INFO: [Synth 8-3886] merging instance 'design_awg_i/awg_axi_0/inst/awg_axi_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'design_awg_i/awg_axi_0/inst/awg_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_awg_i/awg_axi_0/\inst/awg_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
@@ -2441,12 +2439,12 @@ INFO: [Synth 8-3886] merging instance 'design_awg_i/microblaze_0_local_memory/lm
 INFO: [Synth 8-3886] merging instance 'design_awg_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[5].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[1]' (FD) to 'design_awg_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[1]'
 INFO: [Synth 8-3886] merging instance 'design_awg_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[5].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[1]' (FD) to 'design_awg_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[1]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:54 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2491,13 +2489,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_awg_i/microblaze_0
 WARNING: [Synth 8-565] redefining clock 'clk_125MHz'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:04 . Memory (MB): peak = 963.965 ; gain = 645.512
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1037.488 ; gain = 647.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 968.699 ; gain = 650.246
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1043.020 ; gain = 652.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2528,7 +2526,7 @@ Start Technology Mapping
 INFO: [Synth 8-6837] The timing for the instance design_awg_i/awg_axi_0/inst/awg_axi_v1_0_S00_AXI_inst/u_awg_core/u_wave_bram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_awg_i/awg_axi_0/inst/awg_axi_v1_0_S00_AXI_inst/u_awg_core/u_wave_bram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:08 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2552,7 +2550,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2565,7 +2563,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2577,25 +2575,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3380,8 +3378,8 @@ Report Instance Areas:
 |697   |    rst_clk_wiz_1_100M                                                               |design_awg_rst_clk_wiz_1_100M_1                 |    66|
 |698   |      U0                                                                             |proc_sys_reset                                  |    66|
 |699   |        EXT_LPF                                                                      |lpf                                             |    23|
-|700   |          \ACTIVE_LOW_AUX.ACT_LO_AUX                                                 |cdc_sync__parameterized0                        |     6|
-|701   |          \ACTIVE_LOW_EXT.ACT_LO_EXT                                                 |cdc_sync__parameterized0_0                      |     6|
+|700   |          \ACTIVE_HIGH_EXT.ACT_HI_EXT                                                |cdc_sync__parameterized0                        |     6|
+|701   |          \ACTIVE_LOW_AUX.ACT_LO_AUX                                                 |cdc_sync__parameterized0_0                      |     6|
 |702   |        SEQ                                                                          |sequence_psr                                    |    38|
 |703   |          SEQ_COUNTER                                                                |upcnt_n                                         |    13|
 |704   |    microblaze_0_local_memory                                                        |microblaze_0_local_memory_imp_1BQBW9G           |    55|
@@ -3432,17 +3430,17 @@ Report Instance Areas:
 |749   |                  \prim_noinit.ram                                                   |blk_mem_gen_prim_wrapper__parameterized8        |     1|
 +------+-------------------------------------------------------------------------------------+------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 980.914 ; gain = 662.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14619 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:02:00 . Memory (MB): peak = 980.914 ; gain = 566.512
-Synthesis Optimization Complete : Time (s): cpu = 00:02:02 ; elapsed = 00:02:10 . Memory (MB): peak = 980.914 ; gain = 662.461
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.188 ; gain = 561.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1055.188 ; gain = 665.113
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 614 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 980.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1055.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 272 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 38 instances
@@ -3457,12 +3455,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-574 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+574 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:13 . Memory (MB): peak = 980.914 ; gain = 669.359
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 980.914 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1055.188 ; gain = 671.984
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.188 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/design_awg_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1/design_awg_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_awg_wrapper_utilization_synth.rpt -pb design_awg_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 11:38:04 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  8 16:06:01 2026...

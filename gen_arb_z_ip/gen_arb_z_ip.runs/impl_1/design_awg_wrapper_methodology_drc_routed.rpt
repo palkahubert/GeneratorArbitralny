@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jun  5 11:39:17 2026
-| Host         : Hubert running 64-bit major release  (build 9200)
+| Date         : Mon Jun  8 16:06:40 2026
+| Host         : DESKTOP-OEUP6RI running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_awg_wrapper_methodology_drc_routed.rpt -pb design_awg_wrapper_methodology_drc_routed.pb -rpx design_awg_wrapper_methodology_drc_routed.rpx
 | Design       : design_awg_wrapper
 | Device       : xc7z010clg400-1
@@ -48,15 +48,15 @@ Related violations: <none>
 XDCC-1#1 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 8.000 -name clk_125MHz -waveform {0.000 4.000} [get_ports clk_125MHz] (Source: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc (Line: 19))
-Previous: create_clock -period 8.000 [get_ports clk_125MHz] (Source: c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc (Line: 56))
+New: create_clock -period 8.000 -name clk_125MHz -waveform {0.000 4.000} [get_ports clk_125MHz] (Source: C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc (Line: 19))
+Previous: create_clock -period 8.000 [get_ports clk_125MHz] (Source: c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc (Line: 56))
 Related violations: <none>
 
 XDCC-7#1 Warning
 Scoped Clock constraint overwritten on the same source  
 A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 8.000 -name clk_125MHz -waveform {0.000 4.000} [get_ports clk_125MHz] (Source: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc (Line: 19))
-Previous: create_clock -period 8.000 [get_ports clk_125MHz] (Source: c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc (Line: 56))
+New: create_clock -period 8.000 -name clk_125MHz -waveform {0.000 4.000} [get_ports clk_125MHz] (Source: C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/constrs_1/new/zybo_constraint.xdc (Line: 19))
+Previous: create_clock -period 8.000 [get_ports clk_125MHz] (Source: c:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.srcs/sources_1/bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1.xdc (Line: 56))
 Related violations: <none>
 
 

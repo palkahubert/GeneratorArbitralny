@@ -71,7 +71,7 @@ int main(void)
      * 0x00100000 = 2^(32 - 12), czyli adres LUT rosnie o 1 na takt:
      * 0, 1, 2, 3, ...
      */
-    Xil_Out32(AWG_BASEADDR + REG_PHASE_STEP, 0x00100000);
+    Xil_Out32(AWG_BASEADDR + REG_PHASE_STEP, 0x00000011);
 
     /*
      * slv_reg2:
