@@ -73,6 +73,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2_ooc_trace.xdc
 
+# XDC: bd/design_awg/ip/design_awg_mdm_1_2/design_awg_mdm_1_2_ooc.xdc
+
 # XDC: bd/design_awg/ip/design_awg_clk_wiz_1_1/design_awg_clk_wiz_1_1_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_awg_clk_wiz_1_1 || ORIG_REF_NAME==design_awg_clk_wiz_1_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
 

@@ -14,13 +14,13 @@ module tb_awg_core;
     reg enable = 1'b0;
 
     reg [PHASE_BITS-1:0] cfg_phase_step;
-    reg signed [15:0] cfg_amplitude_q15;
-    reg signed [SAMPLE_BITS-1:0] cfg_offset;
+    reg [15:0] cfg_amplitude_q16;
+    reg [SAMPLE_BITS-1:0] cfg_offset;
 
     wire sd_out;
     wire [ADDR_BITS-1:0] dbg_lut_addr;
-    wire signed [SAMPLE_BITS-1:0] dbg_raw_sample;
-    wire signed [SAMPLE_BITS-1:0] dbg_scaled_sample;
+    wire [SAMPLE_BITS-1:0] dbg_raw_sample;
+    wire [SAMPLE_BITS-1:0] dbg_scaled_sample;
     wire [PHASE_BITS-1:0] dbg_phase_acc;
 
     integer fd;
@@ -46,8 +46,11 @@ module tb_awg_core;
         .rst(rst),
         .enable(enable),
         .cfg_phase_step(cfg_phase_step),
-        .cfg_amplitude_q15(cfg_amplitude_q15),
+        .cfg_amplitude_q16(cfg_amplitude_q16),
         .cfg_offset(cfg_offset),
+        .wave_wr_en(1'b0),
+        .wave_wr_addr({ADDR_BITS{1'b0}}),
+        .wave_wr_data({SAMPLE_BITS{1'b0}}),
         .sd_out(sd_out),
         .dbg_lut_addr(dbg_lut_addr),
         .dbg_raw_sample(dbg_raw_sample),
@@ -62,8 +65,8 @@ module tb_awg_core;
         $fwrite(fd, "n,addr,raw_sample,scaled_sample,sd_out\n");
 
         cfg_phase_step    = calc_phase_step(F_OUT_HZ, CLK_FREQ_HZ);
-        cfg_amplitude_q15 = 16'sh6000;
-        cfg_offset        = 16'sd0;
+        cfg_amplitude_q16 = 16'hFFFF;
+        cfg_offset        = 16'd0;
 
         repeat (10) @(posedge clk);
         rst <= 1'b0;
@@ -75,7 +78,7 @@ module tb_awg_core;
                     i, dbg_lut_addr, dbg_raw_sample, dbg_scaled_sample, sd_out);
         end
 
-        cfg_amplitude_q15 <= 16'sh3000;
+        cfg_amplitude_q16 <= 16'h8000;
 
         for (i = 5000; i < 8000; i = i + 1) begin
             @(posedge clk);

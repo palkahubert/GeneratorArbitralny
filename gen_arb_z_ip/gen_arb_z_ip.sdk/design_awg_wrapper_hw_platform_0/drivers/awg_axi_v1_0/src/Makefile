@@ -23,4 +23,4 @@ include:
 	${CP} $(INCLUDEFILES) $(INCLUDEDIR)
 
 clean:
-	rm -rf ${OUTS}
+	rm -f $(wildcard ${OUTS})

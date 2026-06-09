@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1781021719">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1781032095">
   <File Type="BITSTR-BMM" Name="design_awg_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_awg_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_awg_wrapper_timing_summary_init.rpt"/>
@@ -85,7 +85,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSDKDIR/awg_sim/Debug/awg_sim.elf">
+    <File Path="$PSDKDIR/awg_gen/Debug/awg_gen.elf">
       <FileInfo>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="ScopedToRef" Val="design_awg"/>

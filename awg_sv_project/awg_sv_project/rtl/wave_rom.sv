@@ -6,11 +6,11 @@ module wave_rom #(
 )(
     input  wire                         clk,
     input  wire [ADDR_BITS-1:0]          addr,
-    output reg  signed [SAMPLE_BITS-1:0] sample
+    output reg  [SAMPLE_BITS-1:0]        sample
 );
 
     localparam integer DEPTH = (1 << ADDR_BITS);
-    reg signed [SAMPLE_BITS-1:0] mem [0:DEPTH-1];
+    reg [SAMPLE_BITS-1:0] mem [0:DEPTH-1];
 
     initial begin
         $readmemh(INIT_FILE, mem);

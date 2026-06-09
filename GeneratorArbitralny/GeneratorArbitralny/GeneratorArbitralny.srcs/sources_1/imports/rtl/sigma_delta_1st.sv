@@ -1,60 +1,42 @@
 `timescale 1ns/1ps
-
 module sigma_delta_1st #(
-    parameter integer SAMPLE_BITS = 16
+    parameter integer SAMPLE_BITS = 16,
+    parameter integer ACC_BITS    = 20
 )(
     input  wire                         clk,
     input  wire                         rst,
     input  wire                         enable,
-
-    /*
-     * sample_in jest signed:
-     * -32768 ... +32767
-     */
-    input  wire signed [SAMPLE_BITS-1:0] sample_in,
-
-    /*
-     * sd_out jest 1-bitowym PDM:
-     * 0 albo 1
-     */
+    input  wire [SAMPLE_BITS-1:0]       sample_in,
     output reg                          sd_out
 );
 
-    /*
-     * Zamiana signed audio/sample na unsigned duty target:
-     *
-     * sample_in = -32768 -> target = 0
-     * sample_in =      0 -> target = 32768
-     * sample_in = +32767 -> target = 65535
-     *
-     * Dziêki temu zero sygna³u odpowiada wype³nieniu 50%.
-     */
-    wire [SAMPLE_BITS:0] sample_unsigned;
+    localparam integer SHIFT_BITS = ACC_BITS - SAMPLE_BITS;
+    localparam [SAMPLE_BITS-1:0] MAX_SAMPLE = {SAMPLE_BITS{1'b1}};
 
-    assign sample_unsigned =
-        {1'b0, sample_in[SAMPLE_BITS-1:0]} + (1 << (SAMPLE_BITS-1));
+    reg [ACC_BITS-1:0] acc;
+    wire [ACC_BITS-1:0] sample_ext;
+    wire [ACC_BITS:0]   acc_sum;
 
-    /*
-     * Akumulator sigma-delta.
-     * Ma jeden bit wiêcej ni¿ sample_unsigned.
-     */
-    reg [SAMPLE_BITS:0] acc;
+    assign sample_ext = {sample_in, {SHIFT_BITS{1'b0}}};
+    assign acc_sum    = {1'b0, acc} + {1'b0, sample_ext};
 
     always @(posedge clk) begin
         if (rst) begin
-            acc    <= {SAMPLE_BITS+1{1'b0}};
+            acc    <= {ACC_BITS{1'b0}};
             sd_out <= 1'b0;
         end else if (enable) begin
-            /*
-             * Klasyczny 1-bitowy modulator sigma-delta:
-             * carry z dodawania jest wyjœciem.
-             */
-            {sd_out, acc[SAMPLE_BITS-1:0]} <=
-                acc[SAMPLE_BITS-1:0] + sample_unsigned[SAMPLE_BITS-1:0];
-
-            acc[SAMPLE_BITS] <= 1'b0;
+            if (sample_in == {SAMPLE_BITS{1'b0}}) begin
+                acc    <= {ACC_BITS{1'b0}};
+                sd_out <= 1'b0;
+            end else if (sample_in == MAX_SAMPLE) begin
+                acc    <= {ACC_BITS{1'b0}};
+                sd_out <= 1'b1;
+            end else begin
+                acc    <= acc_sum[ACC_BITS-1:0];
+                sd_out <= acc_sum[ACC_BITS];
+            end
         end else begin
-            acc    <= {SAMPLE_BITS+1{1'b0}};
+            acc    <= {ACC_BITS{1'b0}};
             sd_out <= 1'b0;
         end
     end

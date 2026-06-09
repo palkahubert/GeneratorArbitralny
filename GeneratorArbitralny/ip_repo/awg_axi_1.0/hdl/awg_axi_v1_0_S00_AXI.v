@@ -409,21 +409,21 @@
     wire [31:0] cfg_phase_step;
     assign cfg_phase_step = slv_reg1;
     
-    wire signed [15:0] cfg_amplitude_q15;
-    wire signed [15:0] cfg_offset;
+    wire [15:0] cfg_amplitude_q16;
+    wire [15:0] cfg_offset;
     
-    assign cfg_amplitude_q15 = slv_reg2[15:0];
+    assign cfg_amplitude_q16 = slv_reg2[15:0];
     assign cfg_offset        = slv_reg2[31:16];
     
     reg wave_wr_en;
     reg [11:0] wave_wr_addr;
-    reg signed [15:0] wave_wr_data;
+    reg [15:0] wave_wr_data;
     
     always @(posedge S_AXI_ACLK) begin
         if (~S_AXI_ARESETN) begin
             wave_wr_en   <= 1'b0;
             wave_wr_addr <= 12'd0;
-            wave_wr_data <= 16'sd0;
+            wave_wr_data <= 16'd0;
         end else begin
             wave_wr_en <= 1'b0;
     
@@ -440,8 +440,8 @@
     wire sd_out_wire;
     
     wire [11:0] dbg_lut_addr;
-    wire signed [15:0] dbg_raw_sample;
-    wire signed [15:0] dbg_scaled_sample;
+    wire [15:0] dbg_raw_sample;
+    wire [15:0] dbg_scaled_sample;
     wire [31:0] dbg_phase_acc;
     
     awg_core #(
@@ -455,7 +455,7 @@
     
         .enable(enable),
         .cfg_phase_step(cfg_phase_step),
-        .cfg_amplitude_q15(cfg_amplitude_q15),
+        .cfg_amplitude_q16(cfg_amplitude_q16),
         .cfg_offset(cfg_offset),
     
         .wave_wr_en(wave_wr_en),

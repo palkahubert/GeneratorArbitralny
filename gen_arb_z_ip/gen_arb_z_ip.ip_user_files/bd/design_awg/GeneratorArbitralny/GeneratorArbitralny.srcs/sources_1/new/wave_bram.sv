@@ -9,16 +9,16 @@ module wave_bram #(
 
     input  wire                         wr_en,
     input  wire [ADDR_BITS-1:0]          wr_addr,
-    input  wire signed [SAMPLE_BITS-1:0] wr_data,
+    input  wire [SAMPLE_BITS-1:0]        wr_data,
 
     input  wire [ADDR_BITS-1:0]          rd_addr,
-    output reg  signed [SAMPLE_BITS-1:0] rd_data
+    output reg  [SAMPLE_BITS-1:0]        rd_data
 );
 
     localparam integer DEPTH = (1 << ADDR_BITS);
 
     (* ram_style = "block" *)
-    reg signed [SAMPLE_BITS-1:0] mem [0:DEPTH-1];
+    reg [SAMPLE_BITS-1:0] mem [0:DEPTH-1];
 
     initial begin
         if (INIT_FILE != "")

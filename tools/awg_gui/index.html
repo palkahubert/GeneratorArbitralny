@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWG Signal Forge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">AWG</div>
+        <div>
+          <h1>Signal Forge</h1>
+          <p>4096 samples, unsigned 16-bit, UART packet output</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="status-pill" id="serialStatus">Serial disconnected</div>
+        <button class="button secondary" id="exportMemBtn" type="button">Export MEM</button>
+        <button class="button secondary" id="copyCBtn" type="button">Copy C</button>
+        <button class="button secondary" id="exportXsdbBtn" type="button">Export XSDB</button>
+        <button class="button secondary" id="copyXsdbConfigBtn" type="button">Copy XSDB Config</button>
+        <button class="button primary" id="sendWaveBtn" type="button">Send Waveform</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel generator-panel">
+        <div class="panel-head">
+          <h2>Generator</h2>
+          <span id="sampleCountLabel">4096 points</span>
+        </div>
+
+        <div class="mode-grid" id="modeGrid" role="tablist" aria-label="Waveform mode">
+          <button class="mode active" data-mode="sine" type="button">Sine</button>
+          <button class="mode" data-mode="square" type="button">Square</button>
+          <button class="mode" data-mode="triangle" type="button">Triangle</button>
+          <button class="mode" data-mode="saw" type="button">Saw</button>
+          <button class="mode" data-mode="fm" type="button">FM</button>
+          <button class="mode" data-mode="additive" type="button">Additive</button>
+          <button class="mode" data-mode="noise" type="button">Noise</button>
+          <button class="mode" data-mode="spikes" type="button">Spikes</button>
+          <button class="mode" data-mode="formula" type="button">Formula</button>
+        </div>
+
+        <div class="control-list">
+          <label class="control-row">
+            <span>Output frequency</span>
+            <input id="freqHz" type="number" min="0.1" max="1000000" step="1" value="1000">
+          </label>
+          <label class="control-row">
+            <span>Clock Hz</span>
+            <input id="clockHz" type="number" min="1" step="1" value="100000000">
+          </label>
+          <label class="control-row">
+            <span>Amplitude</span>
+            <input id="amplitude" type="range" min="0" max="100" value="92">
+            <output id="amplitudeOut">92%</output>
+          </label>
+          <label class="control-row">
+            <span>Offset</span>
+            <input id="offset" type="range" min="0" max="100" value="50">
+            <output id="offsetOut">50%</output>
+          </label>
+          <label class="control-row">
+            <span>Shape cycles</span>
+            <input id="cycles" type="range" min="1" max="32" value="1">
+            <output id="cyclesOut">1</output>
+          </label>
+          <label class="control-row">
+            <span>Phase</span>
+            <input id="phase" type="range" min="0" max="360" value="0">
+            <output id="phaseOut">0 deg</output>
+          </label>
+          <label class="control-row">
+            <span>Duty</span>
+            <input id="duty" type="range" min="1" max="99" value="50">
+            <output id="dutyOut">50%</output>
+          </label>
+          <label class="control-row">
+            <span>Harmonics</span>
+            <input id="harmonics" type="range" min="1" max="24" value="7">
+            <output id="harmonicsOut">7</output>
+          </label>
+          <label class="control-row">
+            <span>Wildness</span>
+            <input id="wildness" type="range" min="0" max="100" value="18">
+            <output id="wildnessOut">18%</output>
+          </label>
+          <label class="control-row">
+            <span>Seed</span>
+            <input id="seed" type="number" min="1" max="999999" step="1" value="1337">
+          </label>
+        </div>
+
+        <div class="formula-box" id="formulaBox">
+          <label for="formulaInput">Expression</label>
+          <textarea id="formulaInput" spellcheck="false">sin(2*pi*t) + 0.35*sin(9*pi*t)</textarea>
+        </div>
+
+        <div class="toggle-strip">
+          <label><input id="softClip" type="checkbox" checked> Soft clip</label>
+          <label><input id="invert" type="checkbox"> Invert</label>
+          <label><input id="dcBlock" type="checkbox"> Center</label>
+        </div>
+      </section>
+
+      <section class="panel scope-panel">
+        <div class="panel-head">
+          <h2>Waveform</h2>
+          <div class="scope-actions">
+            <button class="button secondary" id="randomizeBtn" type="button">Randomize</button>
+            <button class="button secondary" id="resetBtn" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="waveCanvas" width="1200" height="440"></canvas>
+        </div>
+
+        <div class="meter-grid">
+          <div class="meter">
+            <span>Min</span>
+            <strong id="minValue">0</strong>
+          </div>
+          <div class="meter">
+            <span>Max</span>
+            <strong id="maxValue">65535</strong>
+          </div>
+          <div class="meter">
+            <span>Mean</span>
+            <strong id="meanValue">32768</strong>
+          </div>
+          <div class="meter">
+            <span>Phase step</span>
+            <strong id="phaseStepValue">0x0000A7C6</strong>
+          </div>
+        </div>
+
+        <div class="canvas-wrap compact">
+          <canvas id="histCanvas" width="1200" height="150"></canvas>
+        </div>
+      </section>
+
+      <section class="panel serial-panel">
+        <div class="panel-head">
+          <h2>UART</h2>
+          <span id="packetSize">0 bytes</span>
+        </div>
+
+        <div class="control-list">
+          <label class="control-row">
+            <span>Baud</span>
+            <select id="baudRate">
+              <option value="9600" selected>9600</option>
+              <option value="19200">19200</option>
+              <option value="38400">38400</option>
+              <option value="57600">57600</option>
+              <option value="115200">115200</option>
+            </select>
+          </label>
+          <label class="control-row">
+            <span>Gain Q0.16</span>
+            <input id="gainQ16" type="number" min="0" max="65535" step="1" value="65535">
+          </label>
+          <label class="control-row">
+            <span>Offset raw</span>
+            <input id="offsetRaw" type="number" min="0" max="65535" step="1" value="0">
+          </label>
+        </div>
+
+        <div class="button-stack">
+          <button class="button primary" id="connectBtn" type="button">Connect</button>
+          <button class="button secondary" id="sendConfigBtn" type="button">Send Config</button>
+          <button class="button secondary" id="enableBtn" type="button">Enable</button>
+          <button class="button danger" id="resetAwgBtn" type="button">Reset AWG</button>
+        </div>
+
+        <div class="progress-block">
+          <div class="progress-bar"><span id="progressFill"></span></div>
+          <div class="progress-text" id="progressText">Idle</div>
+        </div>
+
+        <div class="log" id="logBox" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

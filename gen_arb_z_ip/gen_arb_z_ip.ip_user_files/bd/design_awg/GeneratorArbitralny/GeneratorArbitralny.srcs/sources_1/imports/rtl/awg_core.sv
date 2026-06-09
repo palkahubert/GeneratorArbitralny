@@ -11,19 +11,19 @@ module awg_core #(
     // Rejestry konfiguracyjne z AXI-Lite:
     input  wire                          enable,
     input  wire [PHASE_BITS-1:0]         cfg_phase_step,
-    input  wire signed [15:0]            cfg_amplitude_q15,
-    input  wire signed [SAMPLE_BITS-1:0] cfg_offset,
+    input  wire [15:0]                   cfg_amplitude_q16,
+    input  wire [SAMPLE_BITS-1:0]        cfg_offset,
 
     input  wire                          wave_wr_en,
     input  wire [ADDR_BITS-1:0]          wave_wr_addr,
-    input  wire signed [SAMPLE_BITS-1:0] wave_wr_data,
+    input  wire [SAMPLE_BITS-1:0]        wave_wr_data,
 
     output wire                          sd_out,
 
     // Debug do symulacji:
     output wire [ADDR_BITS-1:0]          dbg_lut_addr,
-    output wire signed [SAMPLE_BITS-1:0] dbg_raw_sample,
-    output wire signed [SAMPLE_BITS-1:0] dbg_scaled_sample,
+    output wire [SAMPLE_BITS-1:0]        dbg_raw_sample,
+    output wire [SAMPLE_BITS-1:0]        dbg_scaled_sample,
     output wire [PHASE_BITS-1:0]         dbg_phase_acc
 );
 
@@ -61,7 +61,7 @@ module awg_core #(
         .rst(rst),
         .enable(enable),
         .sample_in(dbg_raw_sample),
-        .amplitude_q15(cfg_amplitude_q15),
+        .amplitude_q16(cfg_amplitude_q16),
         .offset(cfg_offset),
         .sample_out(dbg_scaled_sample)
     );

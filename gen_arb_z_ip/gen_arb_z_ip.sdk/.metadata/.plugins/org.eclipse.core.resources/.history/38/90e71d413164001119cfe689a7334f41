@@ -1,0 +1,77 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_printf.h"
+#include <stdint.h>
+#include <math.h>
+
+#define AWG_BASEADDR XPAR_AWG_AXI_0_S00_AXI_BASEADDR
+
+#define REG_CONTROL     0x00
+#define REG_PHASE_STEP  0x04
+#define REG_GAIN_OFFSET 0x08
+#define REG_WAVE_WRITE  0x0C
+
+#define CTRL_ENABLE     0x00000001
+#define CTRL_RESET      0x00000002
+
+#define AWG_DEPTH       4096
+#define PI              3.14159265358979323846
+#define PHASE_STEP_1KHZ 0x0000A7C6
+#define SAMPLE_MAX      65535.0
+#define GAIN_UNITY_Q16  0xFFFFu
+
+static void awg_write_sample(uint16_t addr, uint16_t sample)
+{
+    uint32_t word;
+
+    word = ((uint32_t)(addr & 0x0FFF) << 16) | (uint32_t)sample;
+    Xil_Out32(AWG_BASEADDR + REG_WAVE_WRITE, word);
+}
+
+int main(void)
+{
+    int addr;
+    double angle;
+    double s;
+    double normalized;
+    double sample_f;
+    uint16_t sample;
+
+    init_platform();
+
+    xil_printf("\r\nAWG 4096 SAMPLE UNSIGNED SINE START\r\n");
+    xil_printf("UARTLite ready\r\n");
+
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_RESET);
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, 0x00000000);
+
+    for (addr = 0; addr < AWG_DEPTH; addr++) {
+        angle = 2.0 * PI * (double)addr / (double)AWG_DEPTH;
+        s = sin(angle);
+        normalized = 0.5 * (s + 1.0);
+        sample_f = (normalized * SAMPLE_MAX) + 0.5;
+
+        if (sample_f < 0.0) {
+            sample = 0u;
+        } else if (sample_f > SAMPLE_MAX) {
+            sample = 0xFFFFu;
+        } else {
+            sample = (uint16_t)sample_f;
+        }
+
+        awg_write_sample((uint16_t)addr, sample);
+    }
+
+    xil_printf("BRAM LOADED\r\n");
+
+    Xil_Out32(AWG_BASEADDR + REG_PHASE_STEP, PHASE_STEP_1KHZ);
+    Xil_Out32(AWG_BASEADDR + REG_GAIN_OFFSET, GAIN_UNITY_Q16);
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_ENABLE);
+
+    xil_printf("AWG ENABLED\r\n");
+
+    while (1) {
+    }
+
+    return 0;
+}
