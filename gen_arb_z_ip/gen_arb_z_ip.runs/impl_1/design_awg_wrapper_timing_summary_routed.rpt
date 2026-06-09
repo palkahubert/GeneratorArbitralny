@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jun  8 16:06:41 2026
-| Host         : DESKTOP-OEUP6RI running 64-bit major release  (build 9200)
+| Date         : Tue Jun  9 18:18:40 2026
+| Host         : Hubert running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file design_awg_wrapper_timing_summary_routed.rpt -pb design_awg_wrapper_timing_summary_routed.pb -rpx design_awg_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : design_awg_wrapper
 | Device       : 7z010-clg400

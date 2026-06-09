@@ -121,3 +121,905 @@ con
 16:07:07 INFO  : Project design_awg_wrapper_hw_platform_1's source hardware specification located at C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf is now different from the local copy.
 		 The local copy will be replaced with the source specification and your workspace will be updated.
 16:07:44 INFO  : Copied contents of C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf into \design_awg_wrapper_hw_platform_1\system.hdf.
+18:18:41 INFO  : Registering command handlers for SDK TCF services
+18:18:43 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\temp_xsdb_launch_script.tcl
+18:18:47 INFO  : XSCT server has started successfully.
+18:18:52 INFO  : Successfully done setting XSCT server connection channel  
+18:18:52 INFO  : Successfully done setting SDK workspace  
+18:18:52 INFO  : Processing command line option -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+18:18:52 INFO  : Checking for hwspec changes in the project design_awg_wrapper_hw_platform_0.
+18:18:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1780929179614,  Project:1780399268226
+18:18:57 INFO  : The hardware specification for project 'design_awg_wrapper_hw_platform_0' is different from C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+18:18:57 INFO  : Copied contents of C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf into \design_awg_wrapper_hw_platform_0\system.hdf.
+18:18:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:19:00 INFO  : 
+18:19:01 INFO  : 
+18:19:02 INFO  : Updating hardware inferred compiler options for awg_sim.
+18:19:03 INFO  : Updating hardware inferred compiler options for awg_test.
+18:19:03 INFO  : Clearing existing target manager status.
+18:19:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:19:05 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:51:20 INFO  : Registering command handlers for SDK TCF services
+16:51:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\temp_xsdb_launch_script.tcl
+16:51:24 INFO  : XSCT server has started successfully.
+16:51:24 INFO  : Successfully done setting XSCT server connection channel  
+16:51:28 INFO  : Successfully done setting SDK workspace  
+16:51:28 INFO  : Processing command line option -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+16:51:28 INFO  : Checking for hwspec changes in the project design_awg_wrapper_hw_platform_0.
+16:53:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+16:54:01 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+16:58:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:58:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+16:58:57 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:00:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:00:36 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:05:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:05:15 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:05:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:05:53 INFO  : 'fpga -state' command is executed.
+17:05:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:05:53 INFO  : 'jtag frequency' command is executed.
+17:05:53 INFO  : Context for 'APU' is selected.
+17:05:53 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:05:53 INFO  : 'configparams force-mem-access 1' command is executed.
+17:05:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:05:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:53 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+17:05:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+----------------End of Script----------------
+
+17:06:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:06:08 INFO  : 'fpga -state' command is executed.
+17:06:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:06:08 INFO  : 'jtag frequency' command is executed.
+17:06:08 INFO  : Context for 'APU' is selected.
+17:06:08 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:06:08 INFO  : 'configparams force-mem-access 1' command is executed.
+17:06:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:06:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:08 INFO  : Processor reset is completed for 'microblaze_0'.
+17:06:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:08 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:06:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:06:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:06:08 INFO  : Memory regions updated for context MicroBlaze #0
+17:06:08 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:06:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:08 INFO  : 'con' command is executed.
+17:06:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:06:08 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:16:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:16:48 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:17:11 INFO  : Disconnected from the channel tcfchan#1.
+17:17:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:17:12 INFO  : 'fpga -state' command is executed.
+17:17:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:17:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:17:13 INFO  : 'jtag frequency' command is executed.
+17:17:13 INFO  : Context for 'APU' is selected.
+17:17:13 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:17:13 INFO  : 'configparams force-mem-access 1' command is executed.
+17:17:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:17:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:17:13 INFO  : Processor reset is completed for 'microblaze_0'.
+17:17:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:17:13 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:17:13 INFO  : 'configparams force-mem-access 0' command is executed.
+17:17:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:17:13 INFO  : Memory regions updated for context MicroBlaze #0
+17:17:13 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:17:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:17:13 INFO  : 'con' command is executed.
+17:17:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:17:13 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:18:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:18:23 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:18:33 INFO  : Disconnected from the channel tcfchan#2.
+17:18:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:18:35 INFO  : 'fpga -state' command is executed.
+17:18:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:18:35 INFO  : 'jtag frequency' command is executed.
+17:18:35 INFO  : Context for 'APU' is selected.
+17:18:35 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:18:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:18:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:18:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:35 INFO  : Processor reset is completed for 'microblaze_0'.
+17:18:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:35 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:18:35 INFO  : 'configparams force-mem-access 0' command is executed.
+17:18:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:18:35 INFO  : Memory regions updated for context MicroBlaze #0
+17:18:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:18:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:35 INFO  : 'con' command is executed.
+17:18:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:18:35 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:19:23 INFO  : Disconnected from the channel tcfchan#3.
+17:20:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:20:00 INFO  : 'fpga -state' command is executed.
+17:20:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:20:06 INFO  : 'jtag frequency' command is executed.
+17:20:06 INFO  : Context for 'APU' is selected.
+17:20:06 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:20:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:20:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:20:09 ERROR : no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+17:20:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+----------------End of Script----------------
+
+17:20:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:20:42 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:21:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:21:03 INFO  : 'fpga -state' command is executed.
+17:21:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:03 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:21:03 INFO  : 'jtag frequency' command is executed.
+17:21:03 INFO  : Context for 'APU' is selected.
+17:21:03 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:21:03 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:03 INFO  : Processor reset is completed for 'microblaze_0'.
+17:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:03 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:21:03 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:04 INFO  : Memory regions updated for context MicroBlaze #0
+17:21:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:21:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:04 INFO  : 'con' command is executed.
+17:21:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:21:04 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:23:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:23:26 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:23:35 INFO  : Disconnected from the channel tcfchan#4.
+17:23:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:23:36 INFO  : 'fpga -state' command is executed.
+17:23:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:23:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:23:36 INFO  : 'jtag frequency' command is executed.
+17:23:37 INFO  : Context for 'APU' is selected.
+17:23:37 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:23:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:23:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:23:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:23:37 INFO  : Processor reset is completed for 'microblaze_0'.
+17:23:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:23:37 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:23:37 INFO  : 'configparams force-mem-access 0' command is executed.
+17:23:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:23:37 INFO  : Memory regions updated for context MicroBlaze #0
+17:23:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:23:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:23:37 INFO  : 'con' command is executed.
+17:23:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:23:37 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:25:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:25:10 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:25:18 INFO  : Disconnected from the channel tcfchan#5.
+17:25:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:25:19 INFO  : 'fpga -state' command is executed.
+17:25:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:25:19 INFO  : 'jtag frequency' command is executed.
+17:25:19 INFO  : Context for 'APU' is selected.
+17:25:19 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:25:19 INFO  : 'configparams force-mem-access 1' command is executed.
+17:25:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:25:19 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:19 INFO  : Processor reset is completed for 'microblaze_0'.
+17:25:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:20 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:25:20 INFO  : 'configparams force-mem-access 0' command is executed.
+17:25:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:25:20 INFO  : Memory regions updated for context MicroBlaze #0
+17:25:20 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:25:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:20 INFO  : 'con' command is executed.
+17:25:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:25:20 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:25:39 INFO  : Disconnected from the channel tcfchan#6.
+17:25:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:25:40 INFO  : 'fpga -state' command is executed.
+17:25:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:25:40 INFO  : 'jtag frequency' command is executed.
+17:25:41 INFO  : Context for 'APU' is selected.
+17:25:41 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:25:41 INFO  : 'configparams force-mem-access 1' command is executed.
+17:25:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:25:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:41 INFO  : Processor reset is completed for 'microblaze_0'.
+17:25:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:41 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:25:41 INFO  : 'configparams force-mem-access 0' command is executed.
+17:25:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:25:41 INFO  : Memory regions updated for context MicroBlaze #0
+17:25:41 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:25:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:41 INFO  : 'con' command is executed.
+17:25:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:25:41 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:26:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:26:24 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:26:36 INFO  : Disconnected from the channel tcfchan#7.
+17:26:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:26:37 INFO  : 'fpga -state' command is executed.
+17:26:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:26:37 INFO  : 'jtag frequency' command is executed.
+17:26:37 INFO  : Context for 'APU' is selected.
+17:26:37 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:26:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:26:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:38 INFO  : Processor reset is completed for 'microblaze_0'.
+17:26:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:38 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:26:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:38 INFO  : Memory regions updated for context MicroBlaze #0
+17:26:38 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:26:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:38 INFO  : 'con' command is executed.
+17:26:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:26:38 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:34:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:34:40 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:35:20 INFO  : Disconnected from the channel tcfchan#8.
+17:35:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:35:21 INFO  : 'fpga -state' command is executed.
+17:35:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:35:21 INFO  : 'jtag frequency' command is executed.
+17:35:21 INFO  : Context for 'APU' is selected.
+17:35:21 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:35:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:35:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:21 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:21 INFO  : Processor reset is completed for 'microblaze_0'.
+17:35:21 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:21 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:35:21 INFO  : 'configparams force-mem-access 0' command is executed.
+17:35:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:35:21 INFO  : Memory regions updated for context MicroBlaze #0
+17:35:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:35:21 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:21 INFO  : 'con' command is executed.
+17:35:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:35:21 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:37:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:37:29 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:37:35 INFO  : Disconnected from the channel tcfchan#9.
+17:37:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:37:36 INFO  : 'fpga -state' command is executed.
+17:37:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:37:36 INFO  : 'jtag frequency' command is executed.
+17:37:36 INFO  : Context for 'APU' is selected.
+17:37:36 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:37:36 INFO  : 'configparams force-mem-access 1' command is executed.
+17:37:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:36 INFO  : Processor reset is completed for 'microblaze_0'.
+17:37:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:37 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:37:37 INFO  : 'configparams force-mem-access 0' command is executed.
+17:37:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:37:37 INFO  : Memory regions updated for context MicroBlaze #0
+17:37:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:37:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:37 INFO  : 'con' command is executed.
+17:37:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:37:37 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:39:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:39:10 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:39:15 INFO  : Disconnected from the channel tcfchan#10.
+17:39:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:39:16 INFO  : 'fpga -state' command is executed.
+17:39:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:39:16 INFO  : 'jtag frequency' command is executed.
+17:39:16 INFO  : Context for 'APU' is selected.
+17:39:16 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:39:16 INFO  : 'configparams force-mem-access 1' command is executed.
+17:39:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:39:16 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:16 INFO  : Processor reset is completed for 'microblaze_0'.
+17:39:16 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:16 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:39:16 INFO  : 'configparams force-mem-access 0' command is executed.
+17:39:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:39:16 INFO  : Memory regions updated for context MicroBlaze #0
+17:39:16 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:39:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:17 INFO  : 'con' command is executed.
+17:39:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:39:17 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:40:58 INFO  : Disconnected from the channel tcfchan#11.
+17:48:17 INFO  : Registering command handlers for SDK TCF services
+17:48:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\temp_xsdb_launch_script.tcl
+17:48:20 INFO  : XSCT server has started successfully.
+17:48:20 INFO  : Successfully done setting XSCT server connection channel  
+17:48:20 INFO  : Successfully done setting SDK workspace  
+17:48:20 INFO  : Processing command line option -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+17:48:20 INFO  : Checking for hwspec changes in the project design_awg_wrapper_hw_platform_0.
+17:48:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781019954851,  Project:1780929179614
+17:48:21 INFO  : The hardware specification for project 'design_awg_wrapper_hw_platform_0' is different from C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+17:48:22 INFO  : Copied contents of C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf into \design_awg_wrapper_hw_platform_0\system.hdf.
+17:48:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:48:25 INFO  : 
+17:48:27 INFO  : 
+17:48:28 INFO  : Updating hardware inferred compiler options for awg_sim.
+17:48:28 INFO  : Updating hardware inferred compiler options for awg_test.
+17:48:28 INFO  : Clearing existing target manager status.
+17:48:28 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:48:31 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:49:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:49:08 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:49:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:49:13 INFO  : 'fpga -state' command is executed.
+17:49:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:49:13 INFO  : 'jtag frequency' command is executed.
+17:49:13 INFO  : Context for 'APU' is selected.
+17:49:13 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:49:13 INFO  : 'configparams force-mem-access 1' command is executed.
+17:49:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:49:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:13 INFO  : Processor reset is completed for 'microblaze_0'.
+17:49:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:13 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:49:13 INFO  : 'configparams force-mem-access 0' command is executed.
+17:49:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:49:13 INFO  : Memory regions updated for context MicroBlaze #0
+17:49:13 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:49:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:14 INFO  : 'con' command is executed.
+17:49:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:49:14 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+17:50:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:50:08 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+17:50:15 INFO  : Disconnected from the channel tcfchan#1.
+17:50:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+17:50:16 INFO  : 'fpga -state' command is executed.
+17:50:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+17:50:16 INFO  : 'jtag frequency' command is executed.
+17:50:16 INFO  : Context for 'APU' is selected.
+17:50:16 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+17:50:16 INFO  : 'configparams force-mem-access 1' command is executed.
+17:50:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:50:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:17 INFO  : Processor reset is completed for 'microblaze_0'.
+17:50:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:17 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+17:50:17 INFO  : 'configparams force-mem-access 0' command is executed.
+17:50:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:50:17 INFO  : Memory regions updated for context MicroBlaze #0
+17:50:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:50:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:17 INFO  : 'con' command is executed.
+17:50:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+17:50:17 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:03:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781020956574,  Project:1781019954851
+18:03:07 INFO  : Project design_awg_wrapper_hw_platform_0's source hardware specification located at C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:03:31 INFO  : Project design_awg_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+18:03:36 INFO  : Disconnected from the channel tcfchan#2.
+18:03:53 INFO  : Registering command handlers for SDK TCF services
+18:03:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\temp_xsdb_launch_script.tcl
+18:03:55 INFO  : XSCT server has started successfully.
+18:03:55 INFO  : Successfully done setting XSCT server connection channel  
+18:03:56 INFO  : Successfully done setting SDK workspace  
+18:03:56 INFO  : Processing command line option -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+18:04:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:04:26 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:04:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:04:31 INFO  : 'fpga -state' command is executed.
+18:04:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:04:31 INFO  : 'jtag frequency' command is executed.
+18:04:31 INFO  : Context for 'APU' is selected.
+18:04:31 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:04:31 INFO  : 'configparams force-mem-access 1' command is executed.
+18:04:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:04:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:31 INFO  : Processor reset is completed for 'microblaze_0'.
+18:04:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:32 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:04:32 INFO  : 'configparams force-mem-access 0' command is executed.
+18:04:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:04:32 INFO  : Memory regions updated for context MicroBlaze #0
+18:04:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:04:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:32 INFO  : 'con' command is executed.
+18:04:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:04:32 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:07:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:07:01 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:07:06 INFO  : Disconnected from the channel tcfchan#1.
+18:07:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:07:07 INFO  : 'fpga -state' command is executed.
+18:07:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:07:08 INFO  : 'jtag frequency' command is executed.
+18:07:08 INFO  : Context for 'APU' is selected.
+18:07:08 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:07:08 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:07:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:08 INFO  : Processor reset is completed for 'microblaze_0'.
+18:07:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:08 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:07:08 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:08 INFO  : Memory regions updated for context MicroBlaze #0
+18:07:08 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:07:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:08 INFO  : 'con' command is executed.
+18:07:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:07:08 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:08:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:08:59 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:11:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:11:05 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:11:13 INFO  : Disconnected from the channel tcfchan#2.
+18:11:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:11:15 INFO  : 'fpga -state' command is executed.
+18:11:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:11:15 INFO  : 'jtag frequency' command is executed.
+18:11:15 INFO  : Context for 'APU' is selected.
+18:11:15 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:11:15 INFO  : 'configparams force-mem-access 1' command is executed.
+18:11:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:15 INFO  : Processor reset is completed for 'microblaze_0'.
+18:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:15 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:11:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:11:15 INFO  : Memory regions updated for context MicroBlaze #0
+18:11:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:15 INFO  : 'con' command is executed.
+18:11:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:11:15 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:12:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:12:37 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:12:43 INFO  : Disconnected from the channel tcfchan#3.
+18:12:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:12:44 INFO  : 'fpga -state' command is executed.
+18:12:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:12:44 INFO  : 'jtag frequency' command is executed.
+18:12:44 INFO  : Context for 'APU' is selected.
+18:12:44 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:12:44 INFO  : 'configparams force-mem-access 1' command is executed.
+18:12:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:12:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:44 INFO  : Processor reset is completed for 'microblaze_0'.
+18:12:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:44 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:12:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:12:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:12:44 INFO  : Memory regions updated for context MicroBlaze #0
+18:12:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:12:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:44 INFO  : 'con' command is executed.
+18:12:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:12:44 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:18:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:18:45 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/design_awg_wrapper.bit"
+18:19:23 INFO  : Disconnected from the channel tcfchan#4.
+18:20:17 INFO  : Registering command handlers for SDK TCF services
+18:20:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\temp_xsdb_launch_script.tcl
+18:20:20 INFO  : XSCT server has started successfully.
+18:20:20 INFO  : Successfully done setting XSCT server connection channel  
+18:20:20 INFO  : Successfully done setting SDK workspace  
+18:20:20 INFO  : Processing command line option -hwspec C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+18:20:20 INFO  : Checking for hwspec changes in the project design_awg_wrapper_hw_platform_2.
+18:20:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781021934026,  Project:1781020956574
+18:20:21 INFO  : The hardware specification for project 'design_awg_wrapper_hw_platform_2' is different from C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf.
+18:20:21 INFO  : Copied contents of C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper.hdf into \design_awg_wrapper_hw_platform_2\system.hdf.
+18:20:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:20:22 INFO  : Clearing existing target manager status.
+18:20:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:20:22 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+18:21:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:21:05 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:21:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:21:09 INFO  : 'fpga -state' command is executed.
+18:21:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:21:09 INFO  : 'jtag frequency' command is executed.
+18:21:09 INFO  : Context for 'APU' is selected.
+18:21:09 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:21:09 INFO  : 'configparams force-mem-access 1' command is executed.
+18:21:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:21:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:10 INFO  : Processor reset is completed for 'microblaze_0'.
+18:21:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:10 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:21:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:21:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:21:10 INFO  : Memory regions updated for context MicroBlaze #0
+18:21:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:21:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:10 INFO  : 'con' command is executed.
+18:21:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:21:10 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:22:10 INFO  : FPGA configured successfully with bitstream "C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/download.bit"
+18:22:16 INFO  : Disconnected from the channel tcfchan#1.
+18:22:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A" && level==0} -index 1' command is executed.
+18:22:17 INFO  : 'fpga -state' command is executed.
+18:22:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C862A' is selected.
+18:22:17 INFO  : 'jtag frequency' command is executed.
+18:22:17 INFO  : Context for 'APU' is selected.
+18:22:17 INFO  : Hardware design information is loaded from 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf'.
+18:22:17 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:22:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:18 INFO  : Processor reset is completed for 'microblaze_0'.
+18:22:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:18 INFO  : The application 'C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf' is downloaded to processor 'microblaze_0'.
+18:22:18 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 0
+loadhw -hw C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/design_awg_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+dow C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.sdk/awg_sim/Debug/awg_sim.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:18 INFO  : Memory regions updated for context MicroBlaze #0
+18:22:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:22:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:18 INFO  : 'con' command is executed.
+18:22:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zybo Z7 210351A6C862A"} -index 1
+con
+----------------End of Script----------------
+
+18:22:18 INFO  : Launch script is exported to file 'C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\gen_arb_z_ip\gen_arb_z_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_sim.elf_on_local.tcl'
+18:24:08 INFO  : Disconnected from the channel tcfchan#2.

@@ -1,33 +1,61 @@
 `timescale 1ns/1ps
+
 module sigma_delta_1st #(
-    parameter integer SAMPLE_BITS = 16,
-    parameter integer ACC_BITS    = 20
+    parameter integer SAMPLE_BITS = 16
 )(
     input  wire                         clk,
     input  wire                         rst,
     input  wire                         enable,
+
+    /*
+     * sample_in jest signed:
+     * -32768 ... +32767
+     */
     input  wire signed [SAMPLE_BITS-1:0] sample_in,
+
+    /*
+     * sd_out jest 1-bitowym PDM:
+     * 0 albo 1
+     */
     output reg                          sd_out
 );
 
-    reg signed [ACC_BITS-1:0] acc;
+    /*
+     * Zamiana signed audio/sample na unsigned duty target:
+     *
+     * sample_in = -32768 -> target = 0
+     * sample_in =      0 -> target = 32768
+     * sample_in = +32767 -> target = 65535
+     *
+     * Dziêki temu zero sygna³u odpowiada wype³nieniu 50%.
+     */
+    wire [SAMPLE_BITS:0] sample_unsigned;
 
-    wire signed [ACC_BITS-1:0] x_ext;
-    wire signed [ACC_BITS-1:0] feedback;
+    assign sample_unsigned =
+        {1'b0, sample_in[SAMPLE_BITS-1:0]} + (1 << (SAMPLE_BITS-1));
 
-    assign x_ext = {{(ACC_BITS-SAMPLE_BITS){sample_in[SAMPLE_BITS-1]}}, sample_in};
-
-    assign feedback = sd_out
-                    ? {{(ACC_BITS-SAMPLE_BITS){1'b0}}, 16'sd32767}
-                    : {{(ACC_BITS-SAMPLE_BITS){1'b1}}, -16'sd32768};
+    /*
+     * Akumulator sigma-delta.
+     * Ma jeden bit wiêcej ni¿ sample_unsigned.
+     */
+    reg [SAMPLE_BITS:0] acc;
 
     always @(posedge clk) begin
         if (rst) begin
-            acc    <= {ACC_BITS{1'b0}};
+            acc    <= {SAMPLE_BITS+1{1'b0}};
             sd_out <= 1'b0;
         end else if (enable) begin
-            acc    <= acc + x_ext - feedback;
-            sd_out <= ~acc[ACC_BITS-1];
+            /*
+             * Klasyczny 1-bitowy modulator sigma-delta:
+             * carry z dodawania jest wyjœciem.
+             */
+            {sd_out, acc[SAMPLE_BITS-1:0]} <=
+                acc[SAMPLE_BITS-1:0] + sample_unsigned[SAMPLE_BITS-1:0];
+
+            acc[SAMPLE_BITS] <= 1'b0;
+        end else begin
+            acc    <= {SAMPLE_BITS+1{1'b0}};
+            sd_out <= 1'b0;
         end
     end
 

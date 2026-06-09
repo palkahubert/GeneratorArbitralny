@@ -8,16 +8,15 @@ module awg_core #(
     input  wire                          clk,
     input  wire                          rst,
 
-    // Rejestry konfiguracyjne, docelowo z AXI-Lite:
+    // Rejestry konfiguracyjne z AXI-Lite:
     input  wire                          enable,
     input  wire [PHASE_BITS-1:0]         cfg_phase_step,
     input  wire signed [15:0]            cfg_amplitude_q15,
     input  wire signed [SAMPLE_BITS-1:0] cfg_offset,
-    
+
     input  wire                          wave_wr_en,
     input  wire [ADDR_BITS-1:0]          wave_wr_addr,
     input  wire signed [SAMPLE_BITS-1:0] wave_wr_data,
-
 
     output wire                          sd_out,
 
@@ -40,34 +39,27 @@ module awg_core #(
         .lut_addr(dbg_lut_addr)
     );
 
-//    wave_rom #(
-//        .ADDR_BITS(ADDR_BITS),
-//        .SAMPLE_BITS(SAMPLE_BITS),
-//        .INIT_FILE(INIT_FILE)
-//    ) u_wave_rom (
-//        .clk(clk),
-//        .addr(dbg_lut_addr),
-//        .sample(dbg_raw_sample)
-//    );
-
     wave_bram #(
-    .ADDR_BITS(ADDR_BITS),
-    .SAMPLE_BITS(SAMPLE_BITS),
-    .INIT_FILE(INIT_FILE)
+        .ADDR_BITS(ADDR_BITS),
+        .SAMPLE_BITS(SAMPLE_BITS),
+        .INIT_FILE(INIT_FILE)
     ) u_wave_bram (
-    .clk(clk),
-
-    .wr_en(wave_wr_en),
-    .wr_addr(wave_wr_addr),
-    .wr_data(wave_wr_data),
-
-    .rd_addr(dbg_lut_addr),
-    .rd_data(dbg_raw_sample)
+        .clk(clk),
+        .wr_en(wave_wr_en),
+        .wr_addr(wave_wr_addr),
+        .wr_data(wave_wr_data),
+        .rd_addr(dbg_lut_addr),
+        .rd_data(dbg_raw_sample)
     );
 
+    // Pipelined scaler: breaks the previous critical combinational path
+    // from BRAM output through multiplier/saturation directly into sigma_delta.
     scaler #(
         .SAMPLE_BITS(SAMPLE_BITS)
     ) u_scaler (
+        .clk(clk),
+        .rst(rst),
+        .enable(enable),
         .sample_in(dbg_raw_sample),
         .amplitude_q15(cfg_amplitude_q15),
         .offset(cfg_offset),

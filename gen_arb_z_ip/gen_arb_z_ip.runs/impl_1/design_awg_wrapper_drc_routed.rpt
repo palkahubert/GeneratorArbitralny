@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jun  8 16:06:39 2026
-| Host         : DESKTOP-OEUP6RI running 64-bit major release  (build 9200)
+| Date         : Tue Jun  9 18:18:36 2026
+| Host         : Hubert running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_awg_wrapper_drc_routed.rpt -pb design_awg_wrapper_drc_routed.pb -rpx design_awg_wrapper_drc_routed.rpx
 | Design       : design_awg_wrapper
 | Device       : xc7z010clg400-1

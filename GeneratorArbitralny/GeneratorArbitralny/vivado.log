@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jun  2 12:40:59 2026
-# Process ID: 9688
+# Start of session at: Tue Jun  9 17:40:01 2026
+# Process ID: 13096
 # Current directory: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11920 C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1932 C:\Users\palka\Documents\SDUP\sdup_projekt\sdup_projekt\GeneratorArbitralny\GeneratorArbitralny\GeneratorArbitralny.xpr
 # Log file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny/vivado.log
 # Journal file: C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/GeneratorArbitralny\vivado.jou
 #-----------------------------------------------------------
@@ -19,7 +19,8 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/GeneratorArbitralny/ip_repo/awg_axi_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 694.848 ; gain = 100.219
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 727.785 ; gain = 105.016
+update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  2 12:49:23 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  9 18:24:15 2026...

@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Jun  8 16:04:55 2026
-//Host        : DESKTOP-OEUP6RI running 64-bit major release  (build 9200)
+//Date        : Tue Jun  9 18:15:01 2026
+//Host        : Hubert running 64-bit major release  (build 9200)
 //Command     : generate_target design_awg_wrapper.bd
 //Design      : design_awg_wrapper
 //Purpose     : IP block netlist

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1'
+HD_PWD='C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
