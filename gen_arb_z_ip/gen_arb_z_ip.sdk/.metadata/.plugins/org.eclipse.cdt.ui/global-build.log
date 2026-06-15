@@ -58,3 +58,90 @@ mb-size awg_gen.elf  |tee "awg_gen.elf.size"
 21:45:54 **** Incremental Build of configuration Debug for project awg_gen ****
 make all 
 make: Nothing to be done for 'all'.
+23:58:42 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.
+23:58:53 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.
+23:59:05 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.
+00:02:10 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.
+00:02:16 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.
+00:07:33 **** Clean-only build of configuration Debug for project awg_gen ****
+make clean 
+rm -rf  ./main.o  ./main.d  awg_gen.elf.size  awg_gen.elf
+' '
+00:07:34 **** Clean-only build of project awg_gen_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/awg_axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+00:07:36 **** Build of project awg_gen_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/awg_axi_v1_0/src"
+make -C microblaze_0/libsrc/awg_axi_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/awg_axi_v1_0/src"
+make -C microblaze_0/libsrc/awg_axi_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling awg_axi..."
+awg_axi_selftest.c: In function 'AWG_AXI_Reg_SelfTest':
+awg_axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( AWG_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+awg_axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+00:07:40 **** Build of configuration Debug for project awg_gen ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -I../../awg_gen_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: awg_gen.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../awg_gen_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "awg_gen.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: awg_gen.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size awg_gen.elf  |tee "awg_gen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10296	    272	   3136	  13704	   3588	awg_gen.elf
+'Finished building: awg_gen.elf.size'
+' '
+00:07:59 **** Incremental Build of configuration Debug for project awg_gen ****
+make all 
+make: Nothing to be done for 'all'.

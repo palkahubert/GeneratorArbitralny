@@ -1,4 +1,4 @@
-21:45:12 **** Build of project awg_gen_bsp ****
+00:07:36 **** Build of project awg_gen_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/awg_axi_v1_0/src"
 make -C microblaze_0/libsrc/awg_axi_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -38,5 +38,5 @@ make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-
 "Compiling uartlite"
 'Finished building libraries'
 
-21:45:15 Build Finished (took 3s.99ms)
+00:07:40 Build Finished (took 3s.603ms)
 

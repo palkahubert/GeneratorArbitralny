@@ -14,6 +14,7 @@
 
 #define CTRL_ENABLE     0x00000001u
 #define CTRL_RESET      0x00000002u
+#define CTRL_RUN        CTRL_ENABLE
 
 #define AWG_DEPTH       4096u
 #define PHASE_STEP_1KHZ 0x0000A7C6u
@@ -59,7 +60,7 @@ static void awg_write_sample(uint16_t addr, uint16_t sample)
 static void awg_reset(void)
 {
     Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_RESET);
-    Xil_Out32(AWG_BASEADDR + REG_CONTROL, 0x00000000u);
+    Xil_Out32(AWG_BASEADDR + REG_CONTROL, CTRL_RUN);
 }
 
 static void awg_enable(uint8_t enable)
@@ -81,6 +82,8 @@ static void uart_putc(char c)
 
 static void uart_puts(const char *text)
 {
+    xil_printf("GUI UART TX: %s", text);
+
     while (*text != '\0') {
         uart_putc(*text);
         text++;
@@ -210,6 +213,7 @@ static void parser_accept(uint8_t byte)
     case RX_LEN1:
         rx_len |= ((uint16_t)byte << 8);
         rx_sum = (rx_sum + byte) & 0xFFFFu;
+        xil_printf("GUI UART RX packet cmd=0x%x len=%d\r\n", (unsigned int)rx_cmd, rx_len);
         rx_state = (rx_len == 0u) ? RX_SUM0 : RX_PAYLOAD;
         break;
     case RX_PAYLOAD:
