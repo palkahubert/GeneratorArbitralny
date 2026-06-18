@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/repos/GeneratorArbitralny/gen_arb_z_ip/gen_arb_z_ip.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/palka/Documents/SDUP/sdup_projekt/sdup_projekt/gen_arb_z_ip/gen_arb_z_ip.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="bf9f7fb74fc84e05b577ddc355a628e1"/>
@@ -77,8 +77,6 @@
       <File Path="$PSDKDIR/awg_gen/Debug/awg_gen.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="ScopedToRef" Val="design_awg"/>
-          <Attr Name="ScopedToCell" Val="microblaze_0"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
@@ -112,8 +110,6 @@
       <File Path="$PSDKDIR/awg_gen/Debug/awg_gen.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="ScopedToRef" Val="design_awg"/>
-          <Attr Name="ScopedToCell" Val="microblaze_0"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
